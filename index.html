@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+    <head>
+    <link href="style.css" type="text/css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="HeaderBox">
+           <header>Covid Tracker</header> 
+        </div>
+        <div class="container">
+            <div class="col1">
+                <header class="DataTitle">Country</header>
+                <p id="countryName">United States</p>               
+                <header class="DataTitle">Population</header>
+                <p id="populationNum">United States</p>                
+                <header class="DataTitle">Time of Update</header>
+                <p id="timeUpdate">United States</p>
+            </div>            
+            <div class="col1">
+                <header class="DataTitle">Deaths</header>
+                <p id="deathCount">United States</p>                
+                <header class="DataTitle">Cases</header>
+                <p id="caseCount">United States</p>               
+                <header class="DataTitle">Recovered</header>
+                <p id="recoveredCount">United States</p>
+            </div>
+        </div>
+        <div class='chart-container'>
+            <canvas id="myChart" width="900vw" height="280vw"></canvas>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.js"></script>
+        <script src="app.js"></script>
+    </body>
+</html>

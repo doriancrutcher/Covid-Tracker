@@ -1,0 +1,66 @@
+
+*.{
+    margin: 0;
+    padding: 0;
+    color: rgba(75, 192, 192, 1);
+   
+    
+}
+
+body{
+    background: black;
+    color: color: rgba(75, 192, 250, 1);
+}
+
+.HeaderBox {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(75, 192, 250, 1);
+    padding: 2vh;
+    font-size: 4vh;
+    
+    
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 3vh;
+    border-color: ;
+    border-width: 10px;
+    border-style: solid;
+    color: rgba(75, 192, 250, 1);;
+    
+    
+    
+}
+
+.DataTitle{
+    color:gray;
+    font-size: 3vh;
+}
+
+
+
+.col1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: color: rgba(75, 192, 250, 1);
+}
+
+.chart-container {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin:3vh;
+    background: black;
+}
+
+.char-container canvas{
+  
+}
