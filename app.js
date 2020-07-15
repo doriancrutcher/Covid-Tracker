@@ -33,6 +33,7 @@ function getCovidInfo(){
         caseDom.innerHTML=confirmedCases;
         recoverDom.innerHTML=data.location.latest.recovered;
         chartStuff(deaths);
+        console.log(deaths)
         
   
         
@@ -47,6 +48,7 @@ function getCovidInfo(){
 }
 
 function chartStuff(deaths){
+    console.log(deaths)
     // getting DOM stuff
     let jancount=0
     let febcount=jancount+10;
@@ -78,7 +80,7 @@ function chartStuff(deaths){
                     pointHitRadius: 10,
                     maintainaspectratio:false,
                     responsive:true,
-                    data: [jancount,febcount,marchcount,aprilcount,Maycount,Junecount,JulyCount],
+                    data: [0,10,marchcount,aprilcount,Maycount,junecount,julycount],
                 }
             ]}
     })
