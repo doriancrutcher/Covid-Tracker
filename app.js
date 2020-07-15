@@ -52,12 +52,14 @@ function chartStuff(deaths){
     let febcount=jancount+10;
     let marchcount=febcount+32+51+517+2897;
     let aprilcount=8893+14287+14077+10760;
-    let Maycount=deaths
+    let Maycount=99800
+    let junecount=121100 
+    let julycount=deaths
     const ThisChart=document.getElementById("myChart");
     var Line= new Chart(ThisChart,{
         type:'line',
          data: {
-            labels: ["January", "February", "March", "April", "May"],
+            labels: ["January", "February", "March", "April", "May","June","July"],
             datasets: [
                 {
                     label: "Covid Death Count",
@@ -76,7 +78,7 @@ function chartStuff(deaths){
                     pointHitRadius: 10,
                     maintainaspectratio:false,
                     responsive:true,
-                    data: [jancount,febcount,marchcount,aprilcount,Maycount],
+                    data: [jancount,febcount,marchcount,aprilcount,Maycount,Junecount,JulyCount],
                 }
             ]}
     })
